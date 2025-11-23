@@ -1,9 +1,14 @@
 <nav>
   <ul>
-    <li [class.active]="activeSection() === 'hero'"><a href="#hero">Accueil</a></li>
-    <li [class.active]="activeSection() === 'about'"><a href="#about">À propos</a></li>
-    <li [class.active]="activeSection() === 'experience'"><a href="#experience">Expérience</a></li>
-    <li [class.active]="activeSection() === 'projects'"><a href="#projects">Projets</a></li>
-    <li [class.active]="activeSection() === 'contact'"><a href="#contact">Contact</a></li>
+    @for (section of sections; track section) {
+      <li class="hover:text-teal-300/75">
+        <a
+          [href]="'#'+section.value"
+          [class.text-teal-400]="activeSection() === section.value"
+          (click)="navigateToSection(section)"
+        >{{ section.label }}
+        </a>
+      </li>
+    }
   </ul>
 </nav>

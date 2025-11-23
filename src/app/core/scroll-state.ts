@@ -1,3 +1,3 @@
 import { signal } from '@angular/core';
 
-export const activeSection = signal<'hero'|'about'|'experience'|'projects'|'contact'>('hero');
+export const activeSection = signal<string>('hero');
