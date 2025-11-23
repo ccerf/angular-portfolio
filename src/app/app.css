@@ -1,0 +1,18 @@
+.layout {
+  display: flex;
+}
+
+main {
+  margin-left: 260px;
+  padding: 40px 80px;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+  main {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
