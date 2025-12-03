@@ -1,9 +1,10 @@
 <nav>
   <ul>
     @for (section of sections; track section) {
-      <li class="hover:text-teal-300/75">
+      <li class="hover:text-teal-300">
         <a
           [href]="'#'+section.value"
+          [class.opacity-75]="activeSection() !== section.value"
           [class.text-teal-400]="activeSection() === section.value"
           (click)="navigateToSection(section)"
         >{{ section.label }}

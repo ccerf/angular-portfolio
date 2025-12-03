@@ -19,7 +19,7 @@ export class Navbar {
     {value: 'experience', label: 'Expérience'},
     {value: 'projects', label: 'Projets'},
     {value: 'contact', label: 'Contact'}
-  ]
+  ];
 
   navigateToSection(section: IOptions): void {
     activeSection.set(section.value.toString())

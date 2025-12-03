@@ -1,7 +1,11 @@
-<div class="layout bg-slate-900 text-slate-400">
-  <app-navbar></app-navbar>
+<div class="layout justify-center bg-slate-900 text-slate-400">
+  <header class="flex md:flex-col flex-row max-h-screen sticky top-0 pt-24 gap-2">
+    <h1 class="text-4xl mb-5 font-bold">Carl Cerf</h1>
+    <h2 class="text-2xl font-semibold">Développeur Fullstack</h2>
+    <app-navbar></app-navbar>
+  </header>
 
-  <main>
+  <main class="flex flex-col pt-24 px-20 gap-10">
     <app-hero></app-hero>
     <app-about></app-about>
     <app-experience></app-experience>

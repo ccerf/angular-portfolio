@@ -15,8 +15,7 @@ import { Projects } from './sections/projects/projects';
     About,
     Experience,
     Projects,
-    Contact,
-    RouterOutlet
+    Contact
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
