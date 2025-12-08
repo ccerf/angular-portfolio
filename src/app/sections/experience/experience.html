@@ -1,21 +1,25 @@
-<div class="flex flex-row gap-4">
-    <h3 class="whitespace-nowrap">09/2020 - Aujourd'hui</h3>
-    <div class="flex flex-col gap-4">
-        <h3 class="text-slate-200">Développeur web, EIG</h3>
-        <ul>
-            <li>Développement d'une application web pour le secteur médical et médico-social : Dossier Unique de l'Usager, aide à la prescription, agenda, etc.</li>
-            <li>Conception et implémentation de nouvelles fonctionnalités, interfaces et services (Angular, Material, TypeScript).</li>
-            <li>Développement d'API back-end (4D).</li>
-            <li>Maintenance corrective et évolutive.</li>
-            <li>Rédaction de documentation technique et support interne.</li>
-            <li>Encadrement et accompagnement d'un alternant dans sesmissions.</li>
-            <li>Travail collaboratif avec Product Owner, UX/UI Designer et développeurs.</li>
-            <li>Utilisation d'outils de gestion de projet (Jira) et participation active aux cérémonies Agile (daily meeting, sprint planning).</li>
-        </ul>
-        <div class="flex flex-row gap-2">
-            <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">Angular</div>
+<div class="space-y-4">
+    @for (experience of experiences; track experience) {
+        <div class="p-4 flex flex-row gap-15 rounded-md hover:bg-slate-800/40 hover:shadow-xl hover:ring-2 hover:ring-slate-800">
+            <h3 class="whitespace-nowrap">{{ experience.startDate }} - {{ experience.endDate }}</h3>
+            <div class="flex flex-col gap-4">
+                <h3 class="text-slate-200">{{ experience.title }}, {{ experience.company }}</h3>
+                <ul class="list-disc pl-4.5 space-y-1 text-sm">
+                    @for (task of experience.tasks; track task) {
+                        <li>{{ task }}</li>
+                    }
+                </ul>
+                <div class="flex flex-row gap-1">
+                    @for (tech of experience.techs; track tech) {
+                        <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                            {{tech }}
+                        </div>
+                    }
+                </div>
+            </div>
         </div>
-        
-    </div>
+    }
 </div>
+
+
 
