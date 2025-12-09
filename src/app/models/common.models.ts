@@ -11,3 +11,10 @@ export interface IExperience {
     techs: string[];
     title: string;
 }
+
+export interface IProject {
+    description: string;
+    name: string;
+    techs: string[];
+    url: string;
+}
