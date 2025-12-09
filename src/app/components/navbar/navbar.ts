@@ -14,7 +14,7 @@ import { IOptions } from '../../models/common.models';
 export class Navbar {
   activeSection = activeSection;
   sections = [
-    {value: 'hero', label: 'Acccueil'},
+    {value: 'hero', label: 'Accueil'},
     {value: 'about', label: 'À propos'},
     {value: 'experience', label: 'Expérience'},
     {value: 'projects', label: 'Projets'},
