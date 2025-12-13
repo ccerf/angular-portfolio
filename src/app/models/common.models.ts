@@ -12,8 +12,14 @@ export interface IExperience {
     title: string;
 }
 
+export interface IImg {
+    src: string;
+    alt: string;
+}
+
 export interface IProject {
     description: string;
+    img: IImg;
     name: string;
     techs: string[];
     url: string;

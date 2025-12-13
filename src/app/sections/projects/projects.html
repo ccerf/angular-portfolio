@@ -1,14 +1,25 @@
 <div class="space-y-4">
     @for (project of projects; track project) {
-        <div class="p-4 flex flex-row gap-15 rounded-md hover:bg-slate-800/40 hover:shadow-xl hover:ring-2 hover:ring-slate-800">
-            <div class="flex flex-col gap-4">
-                <h3 class="whitespace-nowrap">{{ project.name }}</h3>
+        <div
+            class="p-4 flex flex-row gap-15 rounded-md hover:bg-slate-800/40 hover:shadow-xl hover:ring-2 hover:ring-slate-800 cursor-pointer"
+            (click)="openProject(project.url)"
+        >
+            <div class="flex items-center justify-items-center">
+                <img
+                    class="aspect-video w-xs"
+                    [alt]="project.img.alt"
+                    [src]="project.img.src"
+                />
             </div>
             <div class="flex flex-col gap-4">
-                <pre class="whitespace-pre-wrap">{{ project.description }}</pre>
+                <h3 class="text-slate-200">{{ project.name }}</h3>
+                <!-- <pre class="whitespace-pre-wrap p-0 m-0 leading-normal text-sm">{{ project.description }}</pre> -->
+                <p class="whitespace-pre-line text-sm">
+                    {{ project.description }}
+                </p>
                 <div class="flex flex-row gap-1">
                     @for (tech of project.techs; track tech) {
-                        <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                        <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 whitespace-nowrap">
                             {{ tech }}
                         </div>
                     }
