@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { IProject } from '../../models/common.models';
+import { IconComponent } from "../../components/icon/icon";
 
 @Component({
   selector: 'app-projects',
-  imports: [],
+  imports: [IconComponent],
   templateUrl: './projects.html',
   styleUrl: './projects.css',
 })
