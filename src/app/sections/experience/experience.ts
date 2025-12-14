@@ -22,7 +22,7 @@ export class Experience implements OnInit {
         "Développement d'API back-end (4D).",
         "Maintenance corrective et évolutive.",
         "Rédaction de documentation technique et support interne.",
-        "Encadrement et accompagnement d'un alternant dans sesmissions.",
+        "Encadrement et accompagnement d'un alternant dans ses missions.",
         "Travail collaboratif avec Product Owner, UX/UI Designer et développeurs.",
         "Utilisation d'outils de gestion de projet (Jira) et participation active aux cérémonies Agile (daily meeting, sprint planning)."
       ],
