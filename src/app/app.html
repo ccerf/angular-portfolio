@@ -1,8 +1,11 @@
 <div class="layout justify-center bg-slate-900 text-slate-400">
-  <header class="flex md:flex-col flex-row max-h-screen sticky top-0 pt-24 gap-2">
-    <h1 class="text-4xl mb-5 font-bold">Carl Cerf</h1>
-    <h2 class="text-2xl font-semibold">Développeur Fullstack</h2>
-    <app-navbar></app-navbar>
+  <header class="flex md:flex-col flex-row justify-between max-h-screen sticky top-0 py-24 px-6 gap-2">
+    <div>
+      <h1 class="text-4xl mb-5 font-bold">Carl Cerf</h1>
+      <h2 class="text-2xl font-semibold">Développeur Fullstack</h2>
+      <app-navbar></app-navbar>
+    </div>
+    <app-contact></app-contact>
   </header>
 
   <main class="flex flex-col pt-24 px-20 gap-10">
@@ -10,6 +13,5 @@
     <app-about></app-about>
     <app-experience></app-experience>
     <app-projects></app-projects>
-    <app-contact></app-contact>
   </main>
 </div>

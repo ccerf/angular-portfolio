@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { IconComponent } from '../../components/icon/icon';
 
 @Component({
   selector: 'app-contact',
-  imports: [],
+  imports: [IconComponent],
   templateUrl: './contact.html',
   styleUrl: './contact.css',
 })
