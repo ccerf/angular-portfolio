@@ -10,6 +10,7 @@ export interface IExperience {
     tasks: string[];
     techs: string[];
     title: string;
+    url: string;
 }
 
 export interface IImg {

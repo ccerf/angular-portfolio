@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { IExperience } from '../../models/common.models';
+import { IconComponent } from '../../components/icon/icon';
 
 @Component({
   selector: 'app-experience',
-  imports: [],
+  imports: [IconComponent],
   templateUrl: './experience.html',
   styleUrl: './experience.css',
 })
@@ -26,7 +27,12 @@ export class Experience implements OnInit {
         "Travail collaboratif avec Product Owner, UX/UI Designer et développeurs.",
         "Utilisation d'outils de gestion de projet (Jira) et participation active aux cérémonies Agile (daily meeting, sprint planning)."
       ],
-      techs: ['Angular', 'Typescript', 'Angular Material', 'HTML & SCSS']
+      techs: ['Angular', 'Typescript', 'Angular Material', 'HTML & SCSS'],
+      url: 'https://www.eig.fr/'
     }]
+  }
+
+  openExperience(url: string): void {
+    window.open(url, 'blank');
   }
 }

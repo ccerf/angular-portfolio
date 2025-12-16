@@ -1,12 +1,12 @@
 <div class="space-y-4">
     @for (project of projects; track project) {
         <div
-            class="group p-4 flex flex-row gap-15 rounded-md hover:bg-slate-800/40 hover:shadow-xl hover:ring-2 hover:ring-slate-800 cursor-pointer"
+            class="group p-4 flex flex-row gap-15 rounded-md hover:bg-slate-800/40 hover:shadow-xl hover:ring-1 hover:ring-slate-800 cursor-pointer"
             (click)="openProject(project.url)"
         >
             <div class="flex items-center justify-items-center">
                 <img
-                    class="aspect-video w-xs rounded-md group-hover:ring-2 group-hover:ring-slate-100/20"
+                    class="aspect-video w-xs rounded-md group-hover:ring-1 group-hover:ring-slate-100/10"
                     [alt]="project.img.alt"
                     [src]="project.img.src"
                 />
