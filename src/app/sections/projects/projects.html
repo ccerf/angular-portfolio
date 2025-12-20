@@ -1,8 +1,9 @@
 <div class="space-y-4">
     @for (project of projects; track project) {
-        <div
+        <a
             class="group p-4 flex flex-row gap-15 rounded-md hover:bg-slate-800/40 hover:shadow-xl hover:ring-1 hover:ring-slate-800 cursor-pointer"
-            (click)="openProject(project.url)"
+            [href]="project.url"
+            target="_blank"
         >
             <div class="flex items-center justify-items-center">
                 <img
@@ -31,6 +32,6 @@
                     }
                 </div>
             </div>
-        </div>
+        </a>
     }
 </div>

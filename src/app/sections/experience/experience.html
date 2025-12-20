@@ -1,8 +1,9 @@
 <div class="space-y-4">
     @for (experience of experiences; track experience) {
-        <div
-            class="p-4 flex flex-row gap-15 rounded-md hover:bg-slate-800/40 hover:shadow-xl hover:ring-1 hover:ring-slate-800 group"
-            (click)="openExperience(experience.url)"
+        <a
+            class="p-4 flex flex-row gap-15 rounded-md hover:bg-slate-800/40 hover:shadow-xl hover:ring-1 hover:ring-slate-800 group cursor-pointer"
+            [href]="experience.url"
+            target="_blank"
         >
             <h3 class="whitespace-nowrap">{{ experience.startDate }} - {{ experience.endDate }}</h3>
             <div class="flex flex-col gap-4">
@@ -27,7 +28,7 @@
                     }
                 </div>
             </div>
-        </div>
+        </a>
     }
 </div>
 
