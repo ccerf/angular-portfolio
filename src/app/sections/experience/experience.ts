@@ -31,8 +31,4 @@ export class Experience implements OnInit {
       url: 'https://www.eig.fr/'
     }]
   }
-
-  openExperience(url: string): void {
-    window.open(url, 'blank');
-  }
 }

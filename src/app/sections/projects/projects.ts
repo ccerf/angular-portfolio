@@ -31,8 +31,4 @@ export class Projects implements OnInit {
       url: 'https://bomb-sweeper-5143c.web.app/'
     }];
   }
-
-  openProject(url: string): void {
-    window.open(url, 'blank');
-  }
 }
