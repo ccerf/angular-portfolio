@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"], // ou ta police custom
+        sans: ["Inter", "sans-serif"],
       },
     },
   },
