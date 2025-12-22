@@ -1,9 +1,10 @@
-<nav>
-  <ul>
+<nav class="py-10 px-5">
+  <ul class="list-none p-0">
     @for (section of sections; track section) {
-      <li class="hover:text-teal-300 active:text-teal-300">
+      <li class="mb-5 hover:text-teal-300 active:text-teal-300">
         <a
           [href]="'#'+section.value"
+          class="no-underline"
           [class.opacity-75]="activeSection() !== section.value"
           [class.text-teal-400]="activeSection() === section.value"
           (click)="navigateToSection(section)"
