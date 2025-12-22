@@ -1,18 +1,18 @@
 <section id="projects" class="space-y-4">
     @for (project of projects; track project) {
         <a
-            class="group p-4 flex flex-row gap-15 rounded-md hover:bg-slate-800/40 hover:shadow-xl hover:ring-1 hover:ring-slate-800 cursor-pointer"
+            class="group p-4 flex flex-row flex-wrap-reverse gap-x-15 gap-y-2 rounded-md hover:bg-slate-800/40 hover:shadow-xl hover:ring-1 hover:ring-slate-800 cursor-pointer"
             [href]="project.url"
             target="_blank"
         >
-            <div class="flex items-center justify-items-center">
+            <div class="flex items-center justify-items-center flex-1 max-w-2xs min-w-28">
                 <img
-                    class="aspect-video w-xs rounded-md group-hover:ring-1 group-hover:ring-slate-100/10"
+                    class="aspect-video rounded-md group-hover:ring-1 group-hover:ring-slate-100/10"
                     [alt]="project.img.alt"
                     [src]="project.img.src"
                 />
             </div>
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4 flex-1">
                 <div class="flex flex-row items-end">
                     <h3 class="text-slate-200 group-hover:text-teal-400">{{ project.name }}</h3>
                     <app-icon
