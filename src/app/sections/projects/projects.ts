@@ -14,14 +14,14 @@ export class Projects implements OnInit {
 
   ngOnInit(): void {
     this.projects = [{
-      description:
-      `Bombsweeper est ma version du célèbre jeu Démineur !
-      Ce projet a été pour moi l'occasion d'expérimenter plusieurs choses.
-      Tout d'abord, les composants standalone avec Angular v15.
-      C'était aussi ma première tentative avec Tailwind.
-      Enfin, j'ai déployé le projet sur Firebase.
+      description: 
+`Bombsweeper est ma version du célèbre jeu Démineur !
+Ce projet a été pour moi l'occasion d'expérimenter plusieurs choses.
+Tout d'abord, les composants standalone avec Angular v15.
+C'était aussi ma première tentative avec Tailwind.
+Enfin, j'ai déployé le projet sur Firebase.
 
-      Battrez-vous mon meilleur score ?`,
+Battrez-vous mon meilleur score ?`,
       img: {
         alt: 'Aperçu du jeu Bombsweeper',
         src: 'img/bombsweeper.png'
