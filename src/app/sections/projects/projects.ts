@@ -29,6 +29,21 @@ Battrez-vous mon meilleur score ?`,
       name: 'Bombsweeper',
       techs: ['Angular', 'Tailwind', 'Typescript', 'HTML & SCSS', 'Firebase'],
       url: 'https://bomb-sweeper-5143c.web.app/'
+    },
+    {
+      description: 
+`Mon portfolio, sur lequel vous naviguez actuellement.
+
+J'ai realisé par le passé un autre portfolio, pour me permettre par la même occasion d'apprendre React, Next.js ainsi que shadecn ui.
+J'ai finalement développé cette version en en prenant des technologies que je maitrise, tout en intégrant les dernières nouveautés d'Angular 21 comme les signaux et le SSR.
+J'opte une fois de plus pour Tailwind pour la partie CSS.`,
+      img: {
+        alt: 'Aperçu du portfolio de Carl Cerf',
+        src: 'img/portfolio-screenshot.png'
+      },
+      name: 'Mon Portfolio',
+      techs: ['Angular', 'Tailwind', 'Typescript', 'HTML & SCSS', 'Vercel'],
+      url: 'https://carl-cerf.vercel.app/'
     }];
   }
 }
