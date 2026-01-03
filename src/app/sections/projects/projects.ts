@@ -32,11 +32,11 @@ Battrez-vous mon meilleur score ?`,
     },
     {
       description: 
-`Mon portfolio, sur lequel vous naviguez actuellement.
+`Le portfolio sur lequel vous naviguez. Il illustre mon évolution technique et ma veille constante. 
 
-J'ai realisé par le passé un autre portfolio, pour me permettre par la même occasion d'apprendre React, Next.js ainsi que shadecn ui.
-J'ai finalement développé cette version en en prenant des technologies que je maitrise, tout en intégrant les dernières nouveautés d'Angular 21 comme les signaux et le SSR.
-J'opte une fois de plus pour Tailwind pour la partie CSS.`,
+Après une première version réalisée avec React, Next.js et shadcn/ui afin de m'essayer à un nouvel écosystème, j'ai choisi de bâtir cette itération avec mes technologies de prédilection. J'intègre ainsi les dernières évolutions d'Angular 21, exploitant les Signals pour une réactivité optimale et le SSR (Server-Side Rendering) pour la performance.
+
+Côté design, j'ai renouvelé ma confiance en Tailwind CSS pour sa flexibilité et son efficacité.`,
       img: {
         alt: 'Aperçu du portfolio de Carl Cerf',
         src: 'img/portfolio-screenshot.png'
