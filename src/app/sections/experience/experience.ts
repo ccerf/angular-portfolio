@@ -27,7 +27,7 @@ export class Experience implements OnInit {
         "Travail collaboratif avec Product Owner, UX/UI Designer et développeurs.",
         "Utilisation d'outils de gestion de projet (Jira) et participation active aux cérémonies Agile (daily meeting, sprint planning)."
       ],
-      techs: ['Angular', 'Typescript', 'Angular Material', 'HTML & SCSS'],
+      techs: ['Angular', 'Typescript', 'Angular Material', '4D', 'HTML & SCSS'],
       url: 'https://www.eig.fr/'
     }]
   }
