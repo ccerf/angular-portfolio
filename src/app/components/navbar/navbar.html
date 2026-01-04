@@ -1,14 +1,13 @@
 <nav class="lg:py-10 lg:px-5">
   <ul class="list-none flex flex-row justify-end lg:flex-col gap-8 lg:gap-0">
     @for (section of sections; track section) {
-      <li class="mb-5 hover:text-teal-300 active:text-teal-300">
-        <a
-          [href]="'#'+section.value"
-          class="no-underline whitespace-nowrap"
-          [class.opacity-80]="activeSection() !== section.value"
+      <li class="group relative mb-5 flex items-center">
+        <div class="absolute -left-4 h-px w-0 bg-teal-400 transition-all duration-200 lg:group-hover:w-6"></div>
+        <a [href]="'#'+section.value"
+          class="transition-all duration-200 lg:group-hover:translate-x-6 group-hover:text-teal-400"
           [class.text-teal-400]="activeSection() === section.value"
-          (click)="$event.preventDefault(); navigateToSection(section)"
-        >{{ section.label }}
+          (click)="$event.preventDefault(); navigateToSection(section)">
+          <span class="whitespace-nowrap">{{ section.label }}</span>
         </a>
       </li>
     }
