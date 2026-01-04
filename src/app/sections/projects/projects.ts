@@ -24,7 +24,7 @@ Enfin, j'ai déployé le projet sur Firebase.
 Battrez-vous mon meilleur score ?`,
       img: {
         alt: 'Aperçu du jeu Bombsweeper',
-        src: 'img/bombsweeper.png'
+        src: 'img/bombsweeper.webp'
       },
       name: 'Bombsweeper',
       techs: ['Angular', 'Tailwind', 'Typescript', 'HTML & SCSS', 'Firebase'],
@@ -39,7 +39,7 @@ Après une première version réalisée avec React, Next.js et shadcn/ui afin de
 Côté design, j'ai renouvelé ma confiance en Tailwind CSS pour sa flexibilité et son efficacité.`,
       img: {
         alt: 'Aperçu du portfolio de Carl Cerf',
-        src: 'img/portfolio-screenshot.png'
+        src: 'img/portfolio-screenshot.webp'
       },
       name: 'Mon Portfolio',
       techs: ['Angular', 'Tailwind', 'Typescript', 'HTML & SCSS', 'Vercel'],
