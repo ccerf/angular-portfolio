@@ -7,7 +7,7 @@
           class="no-underline whitespace-nowrap"
           [class.opacity-75]="activeSection() !== section.value"
           [class.text-teal-400]="activeSection() === section.value"
-          (click)="navigateToSection(section)"
+          (click)="$event.preventDefault(); navigateToSection(section)"
         >{{ section.label }}
         </a>
       </li>

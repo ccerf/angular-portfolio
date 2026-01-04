@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Indique ici l'URL de ton futur sitemap (optionnel mais recommandé)
-# Sitemap: https://ton-portfolio.com/sitemap.xml
+Sitemap: https://carl-cerf.vercel.app/sitemap.xml
