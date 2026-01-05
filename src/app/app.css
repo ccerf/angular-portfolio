@@ -1,0 +1,10 @@
+/* Cache la barre de défilement pour Chrome, Safari et Opera */
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Cache la barre de défilement pour IE, Edge et Firefox */
+.custom-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
