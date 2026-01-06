@@ -11,6 +11,18 @@ html {
     @apply font-sans;
 }
 
+p {
+  @apply text-sm xl:text-base;
+} 
+
+h1 {
+  @apply text-2xl xl:text-3xl;
+}
+
+h2 {
+  @apply text-lg 2xl:text-xl;
+}
+
 pre, code {
     @apply font-sans;
 }
