@@ -10,6 +10,7 @@ export class IconComponent implements OnInit {
   @Input() name!: string;
   @Input() fill = 'currentColor';
   @Input() stroke = 'currentColor';
+  @Input() strokeWidth = 1;
 
   private host = inject(ElementRef<HTMLElement>);
   private svgService = inject(SvgIconService);
@@ -34,7 +35,11 @@ export class IconComponent implements OnInit {
         // Force le SVG à hériter de currentColor
         .replace(
           '<svg',
-          `<svg fill="${this.fill}" stroke="${this.stroke}" class="w-full h-full"`
+          `<svg
+            fill="${this.fill}"
+            stroke="${this.stroke}"
+            stroke-width="${this.strokeWidth}" 
+            class="w-full h-full"`
         );
       
       this.host.nativeElement.innerHTML = patchedSvg;

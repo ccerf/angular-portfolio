@@ -1,4 +1,4 @@
-<div class="flex flex-row gap-4">
+<div class="flex flex-row gap-4 items-center">
     <a
         aria-label="Linkedin (opens in new tab)"
         href="https://www.linkedin.com/in/carl-cerf/"
@@ -19,4 +19,36 @@
             class="block w-8 h-8 text-slate-400 hover:text-slate-200"
         ></app-icon>
     </a>
+    <button
+        class="group relative flex items-center justify-center"
+        (click)="copyEmail()"
+        aria-label="Copier mon adresse email"
+    >
+        <app-icon
+            name="mail"
+            class="block w-7 h-7 text-slate-400 group-hover:text-slate-200 transition-colors cursor-pointer"
+            fill="transparent"
+            [strokeWidth]="2"
+        ></app-icon>
+
+        <div class="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 
+                    px-3 py-1.5 rounded-md bg-slate-800 text-white text-sm font-medium
+                    shadow-xl pointer-events-none border border-slate-700
+                    transition-all duration-200 ease-out
+                    opacity-0 translate-y-2 scale-95 
+                    group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100 z-50">
+            
+            <div class="whitespace-nowrap">
+                @if (!copied()) {
+                    Copier mon email
+                } @else {
+                    <span class="text-teal-400 font-bold">Copié !</span>
+                }
+            </div>
+
+            <div class="absolute -bottom-1 left-1/2 -translate-x-1/2 
+                        w-2 h-2 bg-slate-800 border-r border-b border-slate-700 
+                        rotate-45"></div>
+        </div>
+    </button>
 </div>
