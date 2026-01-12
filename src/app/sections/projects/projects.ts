@@ -32,6 +32,22 @@ Battrez-vous mon meilleur score ?`,
     },
     {
       description: 
+`En utilisant Google AI Studio, j'ai conçu et orchestré le développement de cet utilitaire de design.
+
+Grâce à des prompts soigneusement rédigés et des optimisations manuelles, j'ai pu développer et déployer cet outil permettant de générer des palettes de couleurs personnalisées.
+L'application transforme des concepts (mots-clés) en palettes de couleurs intelligentes : vous pouvez verrouiller vos favoris, ajuster la sélection et exporter vos codes hexadécimaux en un clic.
+Ce projet est exemple concret d'optimisation du cycle de développement par l'IA.
+`,
+      img: {
+        alt: 'Aperçu de l\'application Chroma Studio',
+        src: 'img/chroma-studio-screenshot.webp'
+      },
+      name: 'Chroma Studio',
+      techs: ['Google AI Studio', 'Tailwind', 'React', 'Vite', 'Vercel'],
+      url: 'https://chroma-studio-ai.vercel.app/'
+    },
+    {
+      description: 
 `Le portfolio sur lequel vous naviguez. Il illustre mon évolution technique et ma veille constante. 
 
 Après une première version réalisée avec React, Next.js et shadcn/ui afin de m'essayer à un nouvel écosystème, j'ai choisi de bâtir cette itération avec mes technologies de prédilection. J'intègre ainsi les dernières évolutions d'Angular 21, exploitant les Signals pour une réactivité optimale et le SSR (Server-Side Rendering) pour la performance.
